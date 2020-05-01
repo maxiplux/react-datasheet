@@ -13,7 +13,8 @@
     "react-dnd": "^2.5.4",
     "react-dnd-html5-backend": "^2.5.4",
     "react-dom": "^15.4.2",
-    "react-select": "^1.0.0-rc.3"
+    "react-select": "^1.0.0-rc.3",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,7 +22,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserslist": {
     "production": [
@@ -34,5 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "snyk": true
 }
